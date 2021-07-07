@@ -160,6 +160,10 @@
     <ClCompile Include="Main\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shader\1.colors.fs" />
+    <None Include="Shader\1.colors.vs" />
+    <None Include="Shader\1.light_cube.fs" />
+    <None Include="Shader\1.light_cube.vs" />
     <None Include="Shader\7.1.camera.fs" />
     <None Include="Shader\7.1.camera.vs" />
     <None Include="Shader\7.4.camera.fs" />

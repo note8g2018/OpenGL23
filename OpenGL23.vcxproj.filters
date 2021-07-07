@@ -38,6 +38,18 @@
     <None Include="Shader\7.4.camera.vs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Shader\1.colors.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shader\1.colors.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shader\1.light_cube.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shader\1.light_cube.fs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader\shader_m.h">
