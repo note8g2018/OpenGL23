@@ -168,6 +168,8 @@
     <None Include="Shader\2.2.basic_lighting.vs" />
     <None Include="Shader\3.1.materials.fs" />
     <None Include="Shader\3.1.materials.vs" />
+    <None Include="Shader\4.1.lighting_maps.fs" />
+    <None Include="Shader\4.1.lighting_maps.vs" />
     <None Include="Shader\7.1.camera.fs" />
     <None Include="Shader\7.1.camera.vs" />
     <None Include="Shader\7.4.camera.fs" />
@@ -181,6 +183,7 @@
   <ItemGroup>
     <Image Include="Resource\awesomeface.png" />
     <Image Include="Resource\container.jpg" />
+    <Image Include="Resource\container2.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

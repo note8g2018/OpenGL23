@@ -62,6 +62,12 @@
     <None Include="Shader\3.1.materials.fs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Shader\4.1.lighting_maps.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shader\4.1.lighting_maps.fs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader\shader_m.h">
@@ -79,6 +85,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resource\container.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\container2.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
