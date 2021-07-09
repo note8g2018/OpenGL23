@@ -187,23 +187,35 @@ int main()
         lightingShader.setVec3("light.position", lightPos);
         lightingShader.setVec3("viewPos", camera.Position);
 
+        //// light properties
+        //glm::vec3 lightColor;
+        //lightColor.x = sin(glfwGetTime() * 2.0f);
+        //lightColor.y = sin(glfwGetTime() * 0.7f);
+        //lightColor.z = sin(glfwGetTime() * 1.3f);
+        //glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f); // decrease the influence
+        //glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
+        //lightingShader.setVec3("light.ambient", ambientColor);
+        //lightingShader.setVec3("light.diffuse", diffuseColor);
+        //lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
         // light properties
-        glm::vec3 lightColor;
-        lightColor.x = sin(glfwGetTime() * 2.0f);
-        lightColor.y = sin(glfwGetTime() * 0.7f);
-        lightColor.z = sin(glfwGetTime() * 1.3f);
-        glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f); // decrease the influence
-        glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
-        lightingShader.setVec3("light.ambient", ambientColor);
-        lightingShader.setVec3("light.diffuse", diffuseColor);
+        // note that all light colors are set at full intensity
+        lightingShader.setVec3("light.ambient", 1.0f, 1.0f, 1.0f); 
+        lightingShader.setVec3("light.diffuse", 1.0f, 1.0f, 1.0f);
         lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
         // material properties
-        lightingShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
-        lightingShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
-        // specular lighting doesn't have full effect on this object's material
-        lightingShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f); 
+        lightingShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f);
+        lightingShader.setVec3("material.diffuse", 0.0f, 0.50980392f, 0.50980392f);
+        lightingShader.setVec3("material.specular", 0.50196078f, 0.50196078f, 0.50196078f);
         lightingShader.setFloat("material.shininess", 32.0f);
+
+        //// material properties
+        //lightingShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
+        //lightingShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+        //// specular lighting doesn't have full effect on this object's material
+        //lightingShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f); 
+        //lightingShader.setFloat("material.shininess", 32.0f);
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), 
