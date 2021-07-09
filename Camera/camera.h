@@ -130,6 +130,7 @@ public:
                 Pitch = -89.0f;
             updateCameraVectors();
         }
+        //updateCameraVectors();
     }
 
     // processes input received from a mouse input system. 
